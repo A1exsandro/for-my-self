@@ -1,6 +1,9 @@
+import React from 'react';
+import Todo from "./Pages/Todo";
+
 function App() {
   return (
-    <div>Welcome!</div>
+    <Todo />
   );
 }
 
