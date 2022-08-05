@@ -1,11 +1,22 @@
 import React from 'react';
-// import Todo from "./Pages/Todo";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Todo from "./Pages/Todo";
 import './App.css';
 import Words from './Pages/Words';
+import Layout from './Pages/Layout';
+import Home from './Pages/Home';
 
 function App() {
   return (
-    <Words />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="words" element={<Words />} />
+          <Route path="todo" element={<Todo />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
