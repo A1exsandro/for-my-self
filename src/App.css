@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  font-size: 1rem;
+  align-self: start;
+  background-color: aqua;
+}
+
+.itemsMenu {
+  display: flex;
+}
+
+.itemsMenu div {
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
