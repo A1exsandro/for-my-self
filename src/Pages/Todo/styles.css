@@ -8,6 +8,29 @@
   border-radius: 8px;
 }
 
+form {
+  display: flex;
+  width: 350px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.in_put {
+  background-color: aqua;
+  width: 290px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  padding-left: 20px;
+}
+
+.button {
+  background-color: brown;
+  width: 60px;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+}
+
 .header {
   display: flex;
   justify-content: center;
