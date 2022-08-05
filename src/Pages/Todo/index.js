@@ -11,7 +11,7 @@ const Todo = () => {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input className='in_put' {...register("task")} />
+        <input className='in_put' defaultValue="test" {...register("task")} />
         <input className='button' type="submit" />
       </form>
 
@@ -19,6 +19,7 @@ const Todo = () => {
         <div className='header'>
           MY TASKS
         </div>
+        <div className='info'>There is { todoList.length }</div>
         {
           todoList.map((todo, index) => (
             <div key={index} className='task'>
