@@ -9,13 +9,11 @@ const Layout = () => {
           <div><Link to="/">Home</Link></div>
           <div><Link to="/todo">Todo</Link></div>
           <div><Link to="/words">Words</Link></div>
+          <div><Link to="/students">Students</Link></div>
         </div>
       </nav>
 
       <Outlet />
-      <div>
-        Here is the LAYOUT PAGE!
-      </div>
     </>
   );
 }

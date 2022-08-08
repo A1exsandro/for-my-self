@@ -5,6 +5,7 @@ import './App.css';
 import Words from './Pages/Words';
 import Layout from './Pages/Layout';
 import Home from './Pages/Home';
+import Students from './Pages/Students';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="words" element={<Words />} />
           <Route path="todo" element={<Todo />} />
+          <Route path="students" element={<Students />} />
         </Route>
       </Routes>
     </BrowserRouter>
