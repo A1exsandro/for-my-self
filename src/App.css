@@ -7,7 +7,7 @@
 nav {
   font-size: 1rem;
   align-self: start;
-  background-color: aqua;
+  background-color: rgb(193, 174, 97);
 }
 
 .itemsMenu {
@@ -15,10 +15,11 @@ nav {
 }
 
 .itemsMenu div {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 a {
   text-decoration: none;
+  font-weight: bold;
   color: black;
 }
