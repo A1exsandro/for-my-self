@@ -12,8 +12,9 @@ const Layout = () => {
           <div><Link to="/students">Students</Link></div>
         </div>
       </nav>
-
+      
       <Outlet />
+      <footer>Coming Soon</footer>
     </>
   );
 }
