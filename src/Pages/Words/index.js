@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import './styles.css';
 
 const Words = () => {
@@ -15,7 +16,7 @@ const Words = () => {
     <div className='containerWord'>
       <div className='menu'>
         <div>Menu</div>
-        <div>Noun</div>
+        <div><Link to="/nouns">Nouns</Link></div>
         <div>Adjective</div>
         <div>Verb</div>
         <div>Adverb</div>
