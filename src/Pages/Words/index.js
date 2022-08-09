@@ -12,14 +12,26 @@ const Words = () => {
   
 
   return (
-    <>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input className='in_word' defaultValue="Word" {...register("word")} />
-        <input className='in_translation' defaultValue="Translation" {...register("translation")} />
-        <input className='button' type="submit" />
-      </form>
+    <div className='containerWord'>
+      <div className='menu'>
+        <div>Menu</div>
+        <div>Noun</div>
+        <div>Adjective</div>
+        <div>Verb</div>
+        <div>Adverb</div>
+        <div>Preposition</div>
+        <div>Conjunction</div>
+        <div>Pronoun</div>
+        <div>Number</div>
+        <div>Interjection</div>
+      </div>
 
-      <div className='container'>
+      <div className='main'>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <input className='in_word' defaultValue="Word" {...register("word")} />
+          <input className='in_translation' defaultValue="Translation" {...register("translation")} />
+          <input className='button' type="submit" />
+        </form>
         <div className='header'>
           MY TASKS
         </div>
@@ -33,7 +45,7 @@ const Words = () => {
           ))
         }
       </div>
-    </>
+    </div>
   );
 }
 
