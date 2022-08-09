@@ -9,7 +9,7 @@ const Todo = () => {
   const onSubmit = data => setTodoList((previous) => [...previous, data.task]);
 
   return (
-    <>
+    <div className='todo'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input className='in_put' defaultValue="test" {...register("task")} />
         <input className='button' type="submit" />
@@ -28,7 +28,7 @@ const Todo = () => {
           ))
         }
       </div>
-    </>
+    </div>
   );
 }
 

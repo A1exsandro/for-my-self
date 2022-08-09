@@ -16,7 +16,7 @@ const Students = () => {
   
 
   return (
-    <>
+    <div className='students'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input className='in_word' defaultValue="Name" {...register("name")} />
         <input className='in_translation' defaultValue="Presence" {...register("presence")} />
@@ -37,7 +37,7 @@ const Students = () => {
           ))
         }
       </div>
-    </>
+    </div>
   );
 }
 
