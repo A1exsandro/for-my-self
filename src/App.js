@@ -7,6 +7,7 @@ import Layout from './Pages/Layout';
 import Home from './Pages/Home';
 import Students from './Pages/Students';
 import Nouns from './Pages/Nouns';
+import Registers from './Pages/Registers';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="todo" element={<Todo />} />
           <Route path="students" element={<Students />} />
           <Route path="nouns" element={<Nouns />} />
+          <Route path="registers" element={<Registers />} />
         </Route>
       </Routes>
     </BrowserRouter>

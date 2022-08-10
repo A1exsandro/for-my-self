@@ -1,6 +1,6 @@
 .students {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: 8rem auto;
 }
